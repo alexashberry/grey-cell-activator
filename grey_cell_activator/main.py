@@ -1,4 +1,3 @@
-import json
 import logging
 import os
 
@@ -28,10 +27,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def question_of_today(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    data = QuestionOfToday().post()
     await context.bot.send_message(
         chat_id=update.effective_chat.id,
-        text=json.dumps(data),
+        text=str(QuestionOfToday()),
     )
 
 
