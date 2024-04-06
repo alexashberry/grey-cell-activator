@@ -8,6 +8,7 @@ packages = [{include = "grey_cell_care"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+python-telegram-bot = "^21.0.1"
 
 
 [build-system]
