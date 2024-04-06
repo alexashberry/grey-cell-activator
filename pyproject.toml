@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "grey-cell-care"
+version = "0.1.0"
+description = "Care for your grey cells!"
+authors = ["Alexandra Ryabinina <ralexacrag@gmail.com>"]
+readme = "README.md"
+packages = [{include = "grey_cell_care"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
